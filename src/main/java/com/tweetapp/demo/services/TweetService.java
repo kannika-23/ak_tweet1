@@ -17,7 +17,7 @@ public interface TweetService {
 
     boolean updateTweetOfUser(String userName, Long id, TweetDto tweetDto);
 
-    //boolean deleteTweetOfUser(String userName, Long id);
+    void deleteTweetOfUser(String userName, Long id);
 
     boolean likeTweetOfUser(String userName, Long id);
 

@@ -1,5 +1,5 @@
 package com.tweetapp.demo.kafka;
-
+/*
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -20,3 +20,4 @@ public class KafkaProducer {
         kafkaTemplate.send(TOPIC_NAME, message);
     }
 }
+*/

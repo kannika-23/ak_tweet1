@@ -1,4 +1,5 @@
 package com.tweetapp.demo.kafka;
+/*
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
@@ -13,3 +14,4 @@ public class kafkaConsumer {
         System.out.println(id);
     }
 }
+*/

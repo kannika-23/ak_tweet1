@@ -78,16 +78,25 @@ public class TweetServiceImpl implements TweetService{
     }
 
    // @Override
-   @KafkaListener(topics = TOPIC_NAME, groupId = GROUP_ID)
+  /* @KafkaListener(topics = TOPIC_NAME, groupId = GROUP_ID)
     public void deleteTweetOfUser(String id) {
         try {
             System.out.println(Long.parseLong(id));
             tweetRepo.deleteById(Long.parseLong(id));
-           // return true;
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }
-       // return false;
+    }*/
+
+    public void deleteTweetOfUser(String username,Long id) {
+        try {
+            //System.out.println(Long.parseLong(id));
+            tweetRepo.deleteById(id);
+           //  return true;
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        // return false;
     }
 
 

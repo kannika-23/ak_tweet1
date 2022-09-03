@@ -1848,3 +1848,405 @@ Caused by: java.net.UnknownHostException: samplecluster-shard-00-01.lvcxw.mongod
 2022-09-03 18:33:15.412  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:54, serverValue:58899}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
 2022-09-03 18:33:15.419  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:53, serverValue:62025}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
 2022-09-03 18:33:20.015  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:55, serverValue:58215}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 19:22:55.300  INFO 46284 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Starting DemoApplication using Java 1.8.0_332 on LTIN141971 with PID 46284 (C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo\target\classes started by 841834 in C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo)
+2022-09-03 19:22:55.305  INFO 46284 --- [restartedMain] com.tweetapp.demo.DemoApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-03 19:22:55.445  INFO 46284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-03 19:22:55.445  INFO 46284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-03 19:22:57.673  INFO 46284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-03 19:22:57.779  INFO 46284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 2 MongoDB repository interfaces.
+2022-09-03 19:22:59.357  INFO 46284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-09-03 19:22:59.387  INFO 46284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-03 19:22:59.388  INFO 46284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-03 19:22:59.567  INFO 46284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-03 19:22:59.567  INFO 46284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4120 ms
+2022-09-03 19:23:00.546  INFO 46284 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='kags', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@257df7b2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@73397a9d]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=samplecluster.lvcxw.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-u7nu14-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1a440c11], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-03 19:23:00.667  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-02.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 19:23:00.757  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-01.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 19:23:00.779  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-00.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 19:23:01.502  INFO 46284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-03 19:23:02.031  INFO 46284 --- [cluster-rtt-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:59441}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.031  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:59441}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.032  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:63392}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.032  INFO 46284 --- [cluster-rtt-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:63278}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.032  INFO 46284 --- [cluster-rtt-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:60134}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.032  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:60133}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.033  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=715392100, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d9181ab995ea5ede7f04, counter=3}, lastWriteDate=Sat Sep 03 19:23:02 IST 2022, lastUpdateTimeNanos=935894996928800}
+2022-09-03 19:23:02.033  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=714199000, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d1, setVersion=6, topologyVersion=TopologyVersion{processId=6310d875d9feffad51021861, counter=6}, lastWriteDate=Sat Sep 03 19:23:02 IST 2022, lastUpdateTimeNanos=935894996929000}
+2022-09-03 19:23:02.033  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=712036600, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d7951a1ef7efb208aebe, counter=4}, lastWriteDate=Sat Sep 03 19:23:02 IST 2022, lastUpdateTimeNanos=935894997054300}
+2022-09-03 19:23:02.039  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff00000000000000d1 from replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.039  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.039  INFO 46284 --- [cluster-ClusterId{value='63135c3c84a54c6a1f36712a', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 19:23:02.349  INFO 46284 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-03 19:23:02.779  WARN 46284 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 19:23:02.781  INFO 46284 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2022-09-03 19:23:02.782  WARN 46284 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 19:23:02.783  INFO 46284 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2022-09-03 19:23:02.783  WARN 46284 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator/health/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 19:23:02.783  INFO 46284 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator/health/**']
+2022-09-03 19:23:02.784  WARN 46284 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 19:23:02.784  INFO 46284 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator']
+2022-09-03 19:23:04.015  INFO 46284 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79d860d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@579ac3e4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3365d6a7, org.springframework.security.web.header.HeaderWriterFilter@4e8ea0a0, org.springframework.web.filter.CorsFilter@6df95aed, org.springframework.security.web.authentication.logout.LogoutFilter@4a7dc3f5, com.tweetapp.demo.security.JwtRequestFilter@9cfefc1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@392c9b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3995e721, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3abb7e88, org.springframework.security.web.session.SessionManagementFilter@254e6cca, org.springframework.security.web.access.ExceptionTranslationFilter@24742e74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b5b49dd]
+2022-09-03 19:23:04.947  INFO 46284 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-09-03 19:23:05.232  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-03 19:23:05.236  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-03 19:23:05.237  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662213185227
+2022-09-03 19:23:06.260  INFO 46284 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2022-09-03 19:23:06.268  INFO 46284 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-09-03 19:23:06.269  INFO 46284 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-09-03 19:23:06.269  INFO 46284 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-09-03 19:23:06.337  INFO 46284 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-09-03 19:23:06.402  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-03 19:23:06.402  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-03 19:23:06.402  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662213186402
+2022-09-03 19:23:06.437  INFO 46284 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): tweetTopic
+2022-09-03 19:23:06.468  INFO 46284 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-09-03 19:23:06.482  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-03 19:23:06.482  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-03 19:23:06.483  INFO 46284 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662213186482
+2022-09-03 19:23:06.495  INFO 46284 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-2, groupId=group_id] Subscribed to topic(s): deleteTopic
+2022-09-03 19:23:06.498  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition tweetTopic-0 to 0 since the associated topicId changed from null to Jy8etpO3QdiVqSaaam_HvA
+2022-09-03 19:23:06.502  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: No6Cf1pBTSaOIUFp1QU7IQ
+2022-09-03 19:23:06.516  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 19:23:06.524  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 19:23:06.530  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting the last seen epoch of partition deleteTopic-0 to 0 since the associated topicId changed from null to eXgFDdejSaO0gtmTGpJBrw
+2022-09-03 19:23:06.530  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Cluster ID: No6Cf1pBTSaOIUFp1QU7IQ
+2022-09-03 19:23:06.532  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 19:23:06.534  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-09-03 19:23:06.559  INFO 46284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2022-09-03 19:23:06.589  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: need to re-join with the given member-id
+2022-09-03 19:23:06.589  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: need to re-join with the given member-id
+2022-09-03 19:23:06.589  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-09-03 19:23:06.590  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 19:23:06.601  INFO 46284 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Started DemoApplication in 12.43 seconds (JVM running for 13.895)
+2022-09-03 19:23:06.645  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=24, memberId='consumer-group_id-1-c0cc0259-2848-48d4-96e2-d1cc674fab62', protocol='range'}
+2022-09-03 19:23:06.647  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully joined group with generation Generation{generationId=24, memberId='consumer-group_id-2-ea718596-9f72-4b90-8cd2-85321bc22911', protocol='range'}
+2022-09-03 19:23:06.657  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting the last seen epoch of partition tweetTopic-0 to 0 since the associated topicId changed from null to Jy8etpO3QdiVqSaaam_HvA
+2022-09-03 19:23:06.663  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Finished assignment for group at generation 24: {consumer-group_id-1-c0cc0259-2848-48d4-96e2-d1cc674fab62=Assignment(partitions=[tweetTopic-0]), consumer-group_id-2-ea718596-9f72-4b90-8cd2-85321bc22911=Assignment(partitions=[deleteTopic-0])}
+2022-09-03 19:23:06.707  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=24, memberId='consumer-group_id-1-c0cc0259-2848-48d4-96e2-d1cc674fab62', protocol='range'}
+2022-09-03 19:23:06.709  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully synced group in generation Generation{generationId=24, memberId='consumer-group_id-2-ea718596-9f72-4b90-8cd2-85321bc22911', protocol='range'}
+2022-09-03 19:23:06.709  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[tweetTopic-0])
+2022-09-03 19:23:06.710  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Notifying assignor about the new Assignment(partitions=[deleteTopic-0])
+2022-09-03 19:23:06.715  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: tweetTopic-0
+2022-09-03 19:23:06.715  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Adding newly assigned partitions: deleteTopic-0
+2022-09-03 19:23:06.734  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Found no committed offset for partition deleteTopic-0
+2022-09-03 19:23:06.738  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition tweetTopic-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN141971.cts.com:9092 (id: 0 rack: null)], epoch=0}}
+2022-09-03 19:23:06.739  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [tweetTopic-0]
+2022-09-03 19:23:06.755  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting offset for partition deleteTopic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN141971.cts.com:9092 (id: 0 rack: null)], epoch=0}}.
+2022-09-03 19:23:06.756  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [deleteTopic-0]
+2022-09-03 19:25:39.238  INFO 46284 --- [http-nio-9000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-03 19:25:39.239  INFO 46284 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-03 19:25:39.240  INFO 46284 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-03 19:25:39.303  WARN 46284 --- [http-nio-9000-exec-3] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 19:25:39.628  INFO 46284 --- [http-nio-9000-exec-3] c.t.demo.controllers.UserController      : In User Controller - login
+2022-09-03 19:25:40.689  INFO 46284 --- [http-nio-9000-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:62884}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 19:25:41.428  INFO 46284 --- [http-nio-9000-exec-7] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 19:32:06.957  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2022-09-03 19:32:06.973  INFO 46284 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-2, groupId=group_id] Node -1 disconnected.
+2022-09-03 20:59:24.314  INFO 33084 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Starting DemoApplication using Java 1.8.0_332 on LTIN141971 with PID 33084 (C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo\target\classes started by 841834 in C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo)
+2022-09-03 20:59:24.317  INFO 33084 --- [restartedMain] com.tweetapp.demo.DemoApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-03 20:59:24.435  INFO 33084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-03 20:59:24.435  INFO 33084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-03 20:59:26.124  INFO 33084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-03 20:59:26.209  INFO 33084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 MongoDB repository interfaces.
+2022-09-03 20:59:27.302  INFO 33084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-09-03 20:59:27.319  INFO 33084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-03 20:59:27.319  INFO 33084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-03 20:59:27.474  INFO 33084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-03 20:59:27.475  INFO 33084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3038 ms
+2022-09-03 20:59:28.156  INFO 33084 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='kags', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@453a148c], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@15c503a3]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=samplecluster.lvcxw.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-u7nu14-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@248be345], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-03 20:59:28.274  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-02.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 20:59:28.320  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-01.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 20:59:28.323  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-00.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 20:59:28.933  INFO 33084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-03 20:59:29.493  INFO 33084 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-03 20:59:29.502  INFO 33084 --- [cluster-rtt-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:62459}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.502  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:63167}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.502  INFO 33084 --- [cluster-rtt-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:63167}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.503  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=684273800, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d7951a1ef7efb208aebe, counter=4}, lastWriteDate=Sat Sep 03 20:59:29 IST 2022, lastUpdateTimeNanos=941682467421200}
+2022-09-03 20:59:29.506  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:66264}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.507  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=693531000, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d1, setVersion=6, topologyVersion=TopologyVersion{processId=6310d875d9feffad51021861, counter=6}, lastWriteDate=Sat Sep 03 20:59:29 IST 2022, lastUpdateTimeNanos=941682474564900}
+2022-09-03 20:59:29.510  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff00000000000000d1 from replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.511  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.511  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:62459}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.511  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.512  INFO 33084 --- [cluster-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=698565700, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d9181ab995ea5ede7f04, counter=3}, lastWriteDate=Sat Sep 03 20:59:29 IST 2022, lastUpdateTimeNanos=941682479284100}
+2022-09-03 20:59:29.518  INFO 33084 --- [cluster-rtt-ClusterId{value='631372d853ee48749fba948f', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:66264}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 20:59:29.831  WARN 33084 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 20:59:29.832  INFO 33084 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2022-09-03 20:59:29.833  WARN 33084 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 20:59:29.834  INFO 33084 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2022-09-03 20:59:29.834  WARN 33084 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator/health/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 20:59:29.834  INFO 33084 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator/health/**']
+2022-09-03 20:59:29.835  WARN 33084 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 20:59:29.835  INFO 33084 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator']
+2022-09-03 20:59:31.012  INFO 33084 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ecc9823, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bf7d3ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@17870028, org.springframework.security.web.header.HeaderWriterFilter@1e97d7b8, org.springframework.web.filter.CorsFilter@44ff4c6a, org.springframework.security.web.authentication.logout.LogoutFilter@584a7d24, com.tweetapp.demo.security.JwtRequestFilter@2a1a265b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ef96c77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48d5b605, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9b4bdc5, org.springframework.security.web.session.SessionManagementFilter@52d7940, org.springframework.security.web.access.ExceptionTranslationFilter@e68c991, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17b09ebc]
+2022-09-03 20:59:31.809  INFO 33084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2022-09-03 20:59:31.830  INFO 33084 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Started DemoApplication in 8.357 seconds (JVM running for 9.174)
+2022-09-03 21:00:10.330  INFO 33084 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-03 21:00:10.330  INFO 33084 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-03 21:00:10.332  INFO 33084 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-03 21:00:10.386  WARN 33084 --- [http-nio-9000-exec-2] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 21:00:10.601  INFO 33084 --- [http-nio-9000-exec-2] c.t.demo.controllers.UserController      : In User Controller - login
+2022-09-03 21:00:11.464  INFO 33084 --- [http-nio-9000-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:66743}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 21:00:12.307  INFO 33084 --- [http-nio-9000-exec-4] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 21:01:22.319  WARN 33084 --- [http-nio-9000-exec-6] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 21:01:22.322  INFO 33084 --- [http-nio-9000-exec-6] c.t.demo.controllers.UserController      : In User Controller - login
+2022-09-03 21:01:22.805  INFO 33084 --- [http-nio-9000-exec-7] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 21:01:25.238  INFO 33084 --- [http-nio-9000-exec-9] c.t.demo.controllers.TweetController     : In get tweets by Id
+2022-09-03 21:01:30.192  INFO 33084 --- [http-nio-9000-exec-1] c.t.demo.controllers.TweetController     : In delete user Tweet
+2022-09-03 21:01:30.525  INFO 33084 --- [http-nio-9000-exec-4] c.t.demo.controllers.TweetController     : In get users tweets
+2022-09-03 21:01:31.074  INFO 33084 --- [http-nio-9000-exec-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:66372}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 21:01:31.231  INFO 33084 --- [http-nio-9000-exec-5] c.t.demo.controllers.TweetController     : In get user details

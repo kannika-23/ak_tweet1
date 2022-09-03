@@ -2,10 +2,9 @@ package com.tweetapp.demo.controllers;
 
 import com.tweetapp.demo.dtomodels.RlyTweet;
 import com.tweetapp.demo.dtomodels.TweetDto;
-import com.tweetapp.demo.kafka.KafkaProducer;
+//import com.tweetapp.demo.kafka.KafkaProducer;
 import com.tweetapp.demo.models.Tweet;
 import com.tweetapp.demo.services.TweetService;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,8 +21,8 @@ import java.util.Map;
 @Slf4j
 public class TweetController {
 
-    @Autowired
-    private KafkaProducer kafkaProducer;
+//    @Autowired
+//    private KafkaProducer kafkaProducer;
 
     @Autowired
     TweetService tweetService;
@@ -79,7 +78,8 @@ public class TweetController {
             return ResponseEntity.badRequest().body("not deleted");//need to impl
         return ResponseEntity.accepted().body("deleted");*/
         try {
-            kafkaProducer.sendMessage(String.valueOf(id));
+            //kafkaProducer.sendMessage(String.valueOf(id));
+            tweetService.deleteTweetOfUser(username, id);
             return new ResponseEntity<>("done", HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>("Application has faced an issue",
