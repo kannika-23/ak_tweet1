@@ -16,9 +16,8 @@ spring:
       matching-strategy: ant_path_matcher
   data:
     mongodb:
-      database: sampledb
-      host: localhost
-      port: 27017
+      uri: mongodb+srv://kags:Qwerty123@samplecluster.lvcxw.mongodb.net/?retryWrites=true&w=majority
+      database: Sampledb
   main:
     web-environment: true
   kafka:

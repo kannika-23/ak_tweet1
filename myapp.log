@@ -1018,3 +1018,833 @@
 2022-09-03 13:48:30.103  WARN 39636 --- [http-nio-9000-exec-5] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
 2022-09-03 13:48:30.164  WARN 39636 --- [http-nio-9000-exec-2] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
 2022-09-03 13:48:30.718  INFO 39636 --- [http-nio-9000-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 535 ms
+2022-09-03 16:08:19.487  INFO 29048 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Starting DemoApplication using Java 1.8.0_332 on LTIN141971 with PID 29048 (C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo\target\classes started by 841834 in C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo)
+2022-09-03 16:08:19.491  INFO 29048 --- [restartedMain] com.tweetapp.demo.DemoApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-03 16:08:19.638  INFO 29048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-03 16:08:19.639  INFO 29048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-03 16:08:22.200  INFO 29048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-03 16:08:22.341  INFO 29048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 MongoDB repository interfaces.
+2022-09-03 16:08:23.944  INFO 29048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-09-03 16:08:23.984  INFO 29048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-03 16:08:23.985  INFO 29048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-03 16:08:24.200  INFO 29048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-03 16:08:24.201  INFO 29048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4561 ms
+2022-09-03 16:08:25.267  INFO 29048 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='kags', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@7f051909], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5b2f73a1]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=samplecluster.lvcxw.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-u7nu14-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@5dba2f5e], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-03 16:08:25.330  INFO 29048 --- [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-02.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 16:08:25.400  INFO 29048 --- [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-01.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 16:08:25.403  INFO 29048 --- [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-00.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 16:08:25.413 ERROR 29048 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtRequestFilter': Unsatisfied dependency expressed through field 'jwtUserDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepo' defined in com.tweetapp.demo.dao.UserRepo defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+2022-09-03 16:08:25.482  INFO 29048 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-03 16:08:25.497  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
+ sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:144)
+2022-09-03 16:08:25.498  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.499  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-srv-samplecluster.lvcxw.mongodb.net] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:108)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.500  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ javax.net.ssl.SSLContext.getDefault(SSLContext.java:95)
+ com.mongodb.connection.SocketStreamFactory.getSslContext(SocketStreamFactory.java:88)
+ com.mongodb.connection.SocketStreamFactory.create(SocketStreamFactory.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:178)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.502  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.ClassLoader.findBootstrapClass(Native Method)
+ java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1008)
+ java.lang.ClassLoader.loadClass(ClassLoader.java:407)
+ java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+ java.lang.Class.getDeclaredConstructors0(Native Method)
+ java.lang.Class.privateGetDeclaredConstructors(Class.java:2699)
+ java.lang.Class.getConstructor0(Class.java:3103)
+ java.lang.Class.getConstructor(Class.java:1853)
+ java.security.Provider$Service.newInstance(Provider.java:1594)
+ sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+ java.security.KeyPairGenerator.getInstance(KeyPairGenerator.java:227)
+ sun.security.ssl.JsseJce.getKeyPairGenerator(JsseJce.java:265)
+ sun.security.ssl.JsseJce$EcAvailability.<clinit>(JsseJce.java:426)
+ sun.security.ssl.JsseJce.isEcAvailable(JsseJce.java:199)
+ sun.security.ssl.CipherSuite$KeyExchange.isAvailable(CipherSuite.java:1162)
+ sun.security.ssl.CipherSuite.isAvailable(CipherSuite.java:1028)
+ sun.security.ssl.SSLContextImpl.getApplicableCipherSuites(SSLContextImpl.java:381)
+ sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuites(SSLContextImpl.java:344)
+ sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:46)
+ sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:577)
+ java.lang.Class.forName0(Native Method)
+ java.lang.Class.forName(Class.java:264)
+ java.security.Provider$Service.getImplClass(Provider.java:1634)
+ java.security.Provider$Service.newInstance(Provider.java:1592)
+ sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+ sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+ javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+ javax.net.ssl.SSLContext.getDefault(SSLContext.java:96)
+ com.mongodb.connection.SocketStreamFactory.getSslContext(SocketStreamFactory.java:88)
+ com.mongodb.connection.SocketStreamFactory.create(SocketStreamFactory.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:178)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.initialize(DefaultServerMonitor.java:427)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:405)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.503  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ javax.net.ssl.SSLContext.getDefault(SSLContext.java:95)
+ com.mongodb.connection.SocketStreamFactory.getSslContext(SocketStreamFactory.java:88)
+ com.mongodb.connection.SocketStreamFactory.create(SocketStreamFactory.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:178)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.504  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ javax.net.ssl.SSLContext.getDefault(SSLContext.java:95)
+ com.mongodb.connection.SocketStreamFactory.getSslContext(SocketStreamFactory.java:88)
+ com.mongodb.connection.SocketStreamFactory.create(SocketStreamFactory.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:178)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.initialize(DefaultServerMonitor.java:427)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:405)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.506  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ javax.net.ssl.SSLContext.getDefault(SSLContext.java:95)
+ com.mongodb.connection.SocketStreamFactory.getSslContext(SocketStreamFactory.java:88)
+ com.mongodb.connection.SocketStreamFactory.create(SocketStreamFactory.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:178)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.507  WARN 29048 --- [restartedMain] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='63132ea1ab1bc172e956c0e7', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ javax.net.ssl.SSLContext.getDefault(SSLContext.java:95)
+ com.mongodb.connection.SocketStreamFactory.getSslContext(SocketStreamFactory.java:88)
+ com.mongodb.connection.SocketStreamFactory.create(SocketStreamFactory.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:178)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.initialize(DefaultServerMonitor.java:427)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:405)
+ java.lang.Thread.run(Thread.java:750)
+2022-09-03 16:08:25.511  WARN 29048 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-09-03 16:08:25.558  INFO 29048 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-03 16:08:25.643 ERROR 29048 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) [spring-boot-2.7.2.jar:2.7.2]
+	at com.tweetapp.demo.DemoApplication.main(DemoApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_332]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.7.2.jar:2.7.2]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:479) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.7.2.jar:2.7.2]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtRequestFilter': Unsatisfied dependency expressed through field 'jwtUserDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepo' defined in com.tweetapp.demo.dao.UserRepo defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:175) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:170) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:155) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:262) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:236) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_332]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_332]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_332]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_332]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.7.2.jar:2.7.2]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtUserDetailsService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepo' defined in com.tweetapp.demo.dao.UserRepo defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepo' defined in com.tweetapp.demo.dao.UserRepo defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Unsatisfied dependency expressed through method 'mongoTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoDatabaseFactory' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 97 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoDatabaseFactorySupport]: Factory method 'mongoDatabaseFactory' threw exception; nested exception is java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 111 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Database name must not be empty!
+	at org.springframework.util.Assert.hasText(Assert.java:289) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.data.mongodb.core.MongoDatabaseFactorySupport.<init>(MongoDatabaseFactorySupport.java:68) ~[spring-data-mongodb-3.4.2.jar:3.4.2]
+	at org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory.<init>(SimpleMongoClientDatabaseFactory.java:75) ~[spring-data-mongodb-3.4.2.jar:3.4.2]
+	at org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory.<init>(SimpleMongoClientDatabaseFactory.java:64) ~[spring-data-mongodb-3.4.2.jar:3.4.2]
+	at org.springframework.boot.autoconfigure.data.mongo.MongoDatabaseFactoryConfiguration.mongoDatabaseFactory(MongoDatabaseFactoryConfiguration.java:43) ~[spring-boot-autoconfigure-2.7.2.jar:2.7.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_332]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 112 common frames omitted
+
+2022-09-03 16:15:56.097  INFO 38856 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Starting DemoApplication using Java 1.8.0_332 on LTIN141971 with PID 38856 (C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo\target\classes started by 841834 in C:\Users\841834\OneDrive - Cognizant\Documents\fse1_proj\java_backend\comp2REf_needed_ak\demo)
+2022-09-03 16:15:56.100  INFO 38856 --- [restartedMain] com.tweetapp.demo.DemoApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-09-03 16:15:56.313  INFO 38856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-03 16:15:56.314  INFO 38856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-03 16:15:58.913  INFO 38856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-03 16:15:59.034  INFO 38856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 2 MongoDB repository interfaces.
+2022-09-03 16:16:00.462  INFO 38856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-09-03 16:16:00.488  INFO 38856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-03 16:16:00.489  INFO 38856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-03 16:16:00.700  INFO 38856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-03 16:16:00.701  INFO 38856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4385 ms
+2022-09-03 16:16:01.519  INFO 38856 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_332-b08"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='kags', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@7aea770d], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@ff2861c]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=samplecluster.lvcxw.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-u7nu14-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@6331351b], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-09-03 16:16:01.700  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-02.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 16:16:01.771  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-01.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 16:16:01.773  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-srv-samplecluster.lvcxw.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server samplecluster-shard-00-00.lvcxw.mongodb.net:27017 to client view of cluster
+2022-09-03 16:16:02.460  INFO 38856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-03 16:16:03.171  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:58239}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.171  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:55268}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.171  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:55268}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.171  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:54606}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.172  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:54606}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.172  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:58239}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.173  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=837243000, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d7951a1ef7efb208aebe, counter=4}, lastWriteDate=Sat Sep 03 16:16:03 IST 2022, lastUpdateTimeNanos=924672496876000}
+2022-09-03 16:16:03.173  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=848243600, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d9181ab995ea5ede7f04, counter=3}, lastWriteDate=Sat Sep 03 16:16:03 IST 2022, lastUpdateTimeNanos=924672496877500}
+2022-09-03 16:16:03.175  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=848388900, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d1, setVersion=6, topologyVersion=TopologyVersion{processId=6310d875d9feffad51021861, counter=6}, lastWriteDate=Sat Sep 03 16:16:03 IST 2022, lastUpdateTimeNanos=924672497014300}
+2022-09-03 16:16:03.182  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff00000000000000d1 from replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.183  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 6 from replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.183  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 16:16:03.249  INFO 38856 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-03 16:16:03.629  WARN 38856 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 16:16:03.631  INFO 38856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/swagger-ui/**']
+2022-09-03 16:16:03.632  WARN 38856 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 16:16:03.633  INFO 38856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/v3/api-docs/**']
+2022-09-03 16:16:03.633  WARN 38856 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator/health/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 16:16:03.633  INFO 38856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator/health/**']
+2022-09-03 16:16:03.633  WARN 38856 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/actuator']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-09-03 16:16:03.633  INFO 38856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Ant [pattern='/actuator']
+2022-09-03 16:16:05.060  INFO 38856 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c369db5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@411c4126, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b8cce84, org.springframework.security.web.header.HeaderWriterFilter@74c6bb3e, org.springframework.web.filter.CorsFilter@27d896ed, org.springframework.security.web.authentication.logout.LogoutFilter@7cd7dee, com.tweetapp.demo.security.JwtRequestFilter@79550079, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fb9b6be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29822261, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e32a7c0, org.springframework.security.web.session.SessionManagementFilter@40b17b43, org.springframework.security.web.access.ExceptionTranslationFilter@699a2623, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d2d992f]
+2022-09-03 16:16:06.023  INFO 38856 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-09-03 16:16:06.308  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-03 16:16:06.312  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-03 16:16:06.312  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662201966304
+2022-09-03 16:16:07.362  INFO 38856 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2022-09-03 16:16:07.371  INFO 38856 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-09-03 16:16:07.372  INFO 38856 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-09-03 16:16:07.373  INFO 38856 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-09-03 16:16:07.449  INFO 38856 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-09-03 16:16:07.548  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-03 16:16:07.548  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-03 16:16:07.548  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662201967547
+2022-09-03 16:16:07.586  INFO 38856 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): tweetTopic
+2022-09-03 16:16:07.630  INFO 38856 --- [restartedMain] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-09-03 16:16:07.648  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.1
+2022-09-03 16:16:07.648  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 97671528ba54a138
+2022-09-03 16:16:07.648  INFO 38856 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1662201967647
+2022-09-03 16:16:07.660  INFO 38856 --- [restartedMain] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-2, groupId=group_id] Subscribed to topic(s): deleteTopic
+2022-09-03 16:16:07.668  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition tweetTopic-0 to 0 since the associated topicId changed from null to Jy8etpO3QdiVqSaaam_HvA
+2022-09-03 16:16:07.674  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: No6Cf1pBTSaOIUFp1QU7IQ
+2022-09-03 16:16:07.683  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting the last seen epoch of partition deleteTopic-0 to 0 since the associated topicId changed from null to eXgFDdejSaO0gtmTGpJBrw
+2022-09-03 16:16:07.684  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Cluster ID: No6Cf1pBTSaOIUFp1QU7IQ
+2022-09-03 16:16:07.688  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 16:16:07.696  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 16:16:07.696  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 16:16:07.699  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-09-03 16:16:07.723  INFO 38856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2022-09-03 16:16:07.769  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: need to re-join with the given member-id
+2022-09-03 16:16:07.769  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: need to re-join with the given member-id
+2022-09-03 16:16:07.770  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 16:16:07.770  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-09-03 16:16:07.775  INFO 38856 --- [restartedMain] com.tweetapp.demo.DemoApplication        : Started DemoApplication in 12.79 seconds (JVM running for 13.921)
+2022-09-03 16:16:07.827  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully joined group with generation Generation{generationId=20, memberId='consumer-group_id-2-b350c84e-072a-44de-8c53-3b5f1846bf2b', protocol='range'}
+2022-09-03 16:16:07.835  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=20, memberId='consumer-group_id-1-e59bbea7-e666-4dc9-a84e-78df9a5d21df', protocol='range'}
+2022-09-03 16:16:07.859  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting the last seen epoch of partition tweetTopic-0 to 0 since the associated topicId changed from null to Jy8etpO3QdiVqSaaam_HvA
+2022-09-03 16:16:07.870  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Finished assignment for group at generation 20: {consumer-group_id-1-e59bbea7-e666-4dc9-a84e-78df9a5d21df=Assignment(partitions=[tweetTopic-0]), consumer-group_id-2-b350c84e-072a-44de-8c53-3b5f1846bf2b=Assignment(partitions=[deleteTopic-0])}
+2022-09-03 16:16:07.954  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=20, memberId='consumer-group_id-1-e59bbea7-e666-4dc9-a84e-78df9a5d21df', protocol='range'}
+2022-09-03 16:16:07.956  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[tweetTopic-0])
+2022-09-03 16:16:07.966  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: tweetTopic-0
+2022-09-03 16:16:07.979  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully synced group in generation Generation{generationId=20, memberId='consumer-group_id-2-b350c84e-072a-44de-8c53-3b5f1846bf2b', protocol='range'}
+2022-09-03 16:16:07.980  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Notifying assignor about the new Assignment(partitions=[deleteTopic-0])
+2022-09-03 16:16:07.980  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Adding newly assigned partitions: deleteTopic-0
+2022-09-03 16:16:07.990  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition tweetTopic-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN141971.cts.com:9092 (id: 0 rack: null)], epoch=0}}
+2022-09-03 16:16:08.000  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [tweetTopic-0]
+2022-09-03 16:16:08.016  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Found no committed offset for partition deleteTopic-0
+2022-09-03 16:16:08.049  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting offset for partition deleteTopic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN141971.cts.com:9092 (id: 0 rack: null)], epoch=0}}.
+2022-09-03 16:16:08.050  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [deleteTopic-0]
+2022-09-03 16:16:41.177  INFO 38856 --- [http-nio-9000-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-03 16:16:41.178  INFO 38856 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-03 16:16:41.182  INFO 38856 --- [http-nio-9000-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-03 16:16:41.355  WARN 38856 --- [http-nio-9000-exec-1] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 16:16:42.470  INFO 38856 --- [http-nio-9000-exec-1] c.t.demo.controllers.UserController      : In User Controller - login
+2022-09-03 16:16:43.585  INFO 38856 --- [http-nio-9000-exec-1] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:58234}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 16:16:44.702  INFO 38856 --- [http-nio-9000-exec-5] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 16:17:47.921  WARN 38856 --- [http-nio-9000-exec-3] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 16:17:48.062  INFO 38856 --- [http-nio-9000-exec-3] c.t.demo.controllers.UserController      : inside pensionerDetail - add Pensioner details - hasError
+2022-09-03 16:17:48.067  INFO 38856 --- [http-nio-9000-exec-3] c.t.d.e.ExceptionHandlerController       : In Exception
+2022-09-03 16:17:48.098  WARN 38856 --- [http-nio-9000-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.tweetapp.demo.exceptions.ParametersMismatchException: Entered invalid parameters]
+2022-09-03 16:18:09.795  WARN 38856 --- [http-nio-9000-exec-6] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 16:19:03.111  WARN 38856 --- [http-nio-9000-exec-10] c.t.demo.security.JwtRequestFilter       : JWT Token does not begin with Bearer String
+2022-09-03 16:19:03.116  INFO 38856 --- [http-nio-9000-exec-10] c.t.demo.controllers.UserController      : In User Controller - login
+2022-09-03 16:19:03.631  INFO 38856 --- [http-nio-9000-exec-8] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 16:19:23.329  INFO 38856 --- [http-nio-9000-exec-5] c.t.demo.controllers.TweetController     : In post user Tweet
+2022-09-03 16:19:24.068  INFO 38856 --- [http-nio-9000-exec-9] c.t.demo.controllers.TweetController     : In get tweets by Id
+2022-09-03 16:19:26.684  INFO 38856 --- [http-nio-9000-exec-3] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 16:19:47.583  INFO 38856 --- [http-nio-9000-exec-7] c.t.demo.controllers.TweetController     : In post user Tweet
+2022-09-03 16:19:48.171  INFO 38856 --- [http-nio-9000-exec-8] c.t.demo.controllers.TweetController     : In get tweets by Id
+2022-09-03 16:19:50.543  INFO 38856 --- [http-nio-9000-exec-1] c.t.demo.controllers.TweetController     : In getAll tweets
+2022-09-03 16:25:07.861  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-2, groupId=group_id] Node -1 disconnected.
+2022-09-03 16:25:08.142  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-1, groupId=group_id] Node -1 disconnected.
+2022-09-03 18:31:44.412  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-1, groupId=group_id] Node 0 disconnected.
+2022-09-03 18:31:44.418  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-2, groupId=group_id] Node 0 disconnected.
+2022-09-03 18:31:44.428  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cancelled in-flight FETCH request with correlation id 14973 due to node 0 being disconnected (elapsed time since creation: 1624921ms, elapsed time since send: 1624921ms, request timeout: 30000ms)
+2022-09-03 18:31:44.428  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-2, groupId=group_id] Cancelled in-flight FETCH request with correlation id 14973 due to node 0 being disconnected (elapsed time since creation: 1624902ms, elapsed time since send: 1624902ms, request timeout: 30000ms)
+2022-09-03 18:31:44.466  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-1, groupId=group_id] Node 2147483647 disconnected.
+2022-09-03 18:31:44.474  INFO 38856 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response.isDisconnected: false. Rediscovery will be attempted.
+2022-09-03 18:31:44.475  INFO 38856 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Requesting disconnect from last known coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:44.507  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-group_id-2, groupId=group_id] Node 2147483647 disconnected.
+2022-09-03 18:31:44.514  INFO 38856 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response.isDisconnected: false. Rediscovery will be attempted.
+2022-09-03 18:31:44.515  INFO 38856 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Requesting disconnect from last known coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:44.570  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-group_id-2, groupId=group_id] Error sending fetch request (sessionId=484077183, epoch=12777) to node 0:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2022-09-03 18:31:44.586  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-group_id-1, groupId=group_id] Error sending fetch request (sessionId=568180065, epoch=12779) to node 0:
+
+org.apache.kafka.common.errors.DisconnectException: null
+
+2022-09-03 18:31:45.009  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:45.027  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:45.343  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: group is already rebalancing
+2022-09-03 18:31:45.359  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions tweetTopic-0
+2022-09-03 18:31:45.372  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [tweetTopic-0]
+2022-09-03 18:31:45.375  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 18:31:45.459  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:45.501  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:45.528  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Discovered group coordinator LTIN141971.cts.com:9092 (id: 2147483647 rack: null)
+2022-09-03 18:31:45.803  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] JoinGroup failed: The coordinator is not aware of this member. Need to re-join the group. Sent generation was Generation{generationId=20, memberId='consumer-group_id-1-e59bbea7-e666-4dc9-a84e-78df9a5d21df', protocol='range'}
+2022-09-03 18:31:45.806  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation due to: encountered UNKNOWN_MEMBER_ID from JOIN_GROUP response
+2022-09-03 18:31:45.806  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: encountered UNKNOWN_MEMBER_ID from JOIN_GROUP response
+2022-09-03 18:31:45.807  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 18:31:45.813  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: need to re-join with the given member-id
+2022-09-03 18:31:45.813  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Attempt to heartbeat with Generation{generationId=20, memberId='consumer-group_id-2-b350c84e-072a-44de-8c53-3b5f1846bf2b', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation
+2022-09-03 18:31:45.813  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2022-09-03 18:31:45.815  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting generation due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+2022-09-03 18:31:45.815  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: encountered UNKNOWN_MEMBER_ID from HEARTBEAT response
+2022-09-03 18:31:45.816  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-09-03 18:31:45.816  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Lost previously assigned partitions deleteTopic-0
+2022-09-03 18:31:45.818  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions lost: [deleteTopic-0]
+2022-09-03 18:31:45.818  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [deleteTopic-0]
+2022-09-03 18:31:45.819  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-09-03 18:31:45.863  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Request joining group due to: need to re-join with the given member-id
+2022-09-03 18:31:45.864  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] (Re-)joining group
+2022-09-03 18:31:45.872  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=22, memberId='consumer-group_id-1-1fbba3ef-41c1-4a67-a7c8-5e0c00c9eb83', protocol='range'}
+2022-09-03 18:31:45.874  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully joined group with generation Generation{generationId=22, memberId='consumer-group_id-2-95adf9b8-072d-4d40-b3f5-7a36801ce523', protocol='range'}
+2022-09-03 18:31:45.875  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition deleteTopic-0 to 0 since the associated topicId changed from null to eXgFDdejSaO0gtmTGpJBrw
+2022-09-03 18:31:45.877  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 22: {consumer-group_id-2-95adf9b8-072d-4d40-b3f5-7a36801ce523=Assignment(partitions=[deleteTopic-0]), consumer-group_id-1-1fbba3ef-41c1-4a67-a7c8-5e0c00c9eb83=Assignment(partitions=[tweetTopic-0])}
+2022-09-03 18:31:45.893  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=22, memberId='consumer-group_id-1-1fbba3ef-41c1-4a67-a7c8-5e0c00c9eb83', protocol='range'}
+2022-09-03 18:31:45.894  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Successfully synced group in generation Generation{generationId=22, memberId='consumer-group_id-2-95adf9b8-072d-4d40-b3f5-7a36801ce523', protocol='range'}
+2022-09-03 18:31:45.895  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[tweetTopic-0])
+2022-09-03 18:31:45.895  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Notifying assignor about the new Assignment(partitions=[deleteTopic-0])
+2022-09-03 18:31:45.895  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: tweetTopic-0
+2022-09-03 18:31:45.895  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Adding newly assigned partitions: deleteTopic-0
+2022-09-03 18:31:45.902  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition tweetTopic-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN141971.cts.com:9092 (id: 0 rack: null)], epoch=0}}
+2022-09-03 18:31:45.903  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [tweetTopic-0]
+2022-09-03 18:31:45.936  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-2, groupId=group_id] Found no committed offset for partition deleteTopic-0
+2022-09-03 18:31:46.039  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-group_id-2, groupId=group_id] Resetting offset for partition deleteTopic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[LTIN141971.cts.com:9092 (id: 0 rack: null)], epoch=0}}.
+2022-09-03 18:31:46.040  INFO 38856 --- [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [deleteTopic-0]
+2022-09-03 18:32:00.976  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_332]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1346) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962) ~[na:1.8.0_332]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 5 common frames omitted
+
+2022-09-03 18:32:00.993  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+
+com.mongodb.MongoSocketException: samplecluster-shard-00-00.lvcxw.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_332]
+Caused by: java.net.UnknownHostException: samplecluster-shard-00-00.lvcxw.mongodb.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_332]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_332]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 6 common frames omitted
+
+2022-09-03 18:32:01.034  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_332]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1346) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962) ~[na:1.8.0_332]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 5 common frames omitted
+
+2022-09-03 18:32:01.035  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+
+com.mongodb.MongoSocketException: samplecluster-shard-00-02.lvcxw.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_332]
+Caused by: java.net.UnknownHostException: samplecluster-shard-00-02.lvcxw.mongodb.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_332]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_332]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 6 common frames omitted
+
+2022-09-03 18:32:01.709  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_332]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_332]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1346) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73) ~[na:1.8.0_332]
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:962) ~[na:1.8.0_332]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 5 common frames omitted
+
+2022-09-03 18:32:01.711  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+
+com.mongodb.MongoSocketException: samplecluster-shard-00-01.lvcxw.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.1.jar:na]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_332]
+Caused by: java.net.UnknownHostException: samplecluster-shard-00-01.lvcxw.mongodb.net
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_332]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193) ~[na:1.8.0_332]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127) ~[na:1.8.0_332]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.1.jar:na]
+	... 6 common frames omitted
+
+2022-09-03 18:33:11.608  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:51, serverValue:58213}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
+2022-09-03 18:33:11.608  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:50, serverValue:58893}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 18:33:11.611  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=291807400, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-02.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d9181ab995ea5ede7f04, counter=3}, lastWriteDate=Sat Sep 03 18:33:11 IST 2022, lastUpdateTimeNanos=932904576871500}
+2022-09-03 18:33:11.611  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=344954300, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-00.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=6, topologyVersion=TopologyVersion{processId=6310d7951a1ef7efb208aebe, counter=4}, lastWriteDate=Sat Sep 03 18:33:11 IST 2022, lastUpdateTimeNanos=932904576871500}
+2022-09-03 18:33:12.216  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:52, serverValue:62102}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 18:33:12.217  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=263537000, setName='atlas-u7nu14-shard-0', canonicalAddress=samplecluster-shard-00-01.lvcxw.mongodb.net:27017, hosts=[samplecluster-shard-00-01.lvcxw.mongodb.net:27017, samplecluster-shard-00-02.lvcxw.mongodb.net:27017, samplecluster-shard-00-00.lvcxw.mongodb.net:27017], passives=[], arbiters=[], primary='samplecluster-shard-00-01.lvcxw.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000d1, setVersion=6, topologyVersion=TopologyVersion{processId=6310d875d9feffad51021861, counter=6}, lastWriteDate=Sat Sep 03 18:33:12 IST 2022, lastUpdateTimeNanos=932905184781500}
+2022-09-03 18:33:12.217  INFO 38856 --- [cluster-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 18:33:15.412  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-00.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:54, serverValue:58899}] to samplecluster-shard-00-00.lvcxw.mongodb.net:27017
+2022-09-03 18:33:15.419  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-01.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:53, serverValue:62025}] to samplecluster-shard-00-01.lvcxw.mongodb.net:27017
+2022-09-03 18:33:20.015  INFO 38856 --- [cluster-rtt-ClusterId{value='6313306978f9af72e8c7b91b', description='null'}-samplecluster-shard-00-02.lvcxw.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:55, serverValue:58215}] to samplecluster-shard-00-02.lvcxw.mongodb.net:27017
