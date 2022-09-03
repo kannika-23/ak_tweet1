@@ -27,14 +27,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User addUser(UserDto userDto) {
-       /* if(userRepo.findItemByUserid(userDto.getEmail()).getEmail() != userDto.getEmail()){
-            throw new UserAlreadyFoundException("User mail id Already exits");
-        }else if(userRepo.findItemByUsername(userDto.getUsername()).getUsername()!=userDto.getUsername()){
-            throw new UserAlreadyFoundException("User name Already used");
-        }*/
-
         User user = userRepo.save(getUserFromUserDto(userDto));
-        System.out.println(user.getEmail());
         return user;
     }
 
@@ -51,12 +44,11 @@ public class UserServiceImpl implements UserService{
         return user;
     }
 
-    @Override //need to return allTweets
+    @Override
     public String loginCheck(UserLoginDto userLoginDto) {
         try {
             User user = userRepo.findItemByUserid(userLoginDto.getEmail());
             if(!user.getPassword().equals(userLoginDto.getPassword())){
-                System.out.println(user.getEmail()+ user.getPassword());
                 throw new ResourceNotFoundException("user not found");
             }
             return user.getNickname();
@@ -71,16 +63,13 @@ public class UserServiceImpl implements UserService{
         try {
             User user = userRepo.findItemByUserid(userPasswordDto.getEmail());
             if(!user.getNickname().equals(userPasswordDto.getNickname())){
-                System.out.println(user.getEmail()+ user.getPassword());
                 throw new ResourceNotFoundException("user not found");
             }
             UpdateResult result =customRepo.updateUserPassword(userPasswordDto.getEmail(),userPasswordDto.getNewPassword());
             if(result == null){
-                System.out.println("result null");
                 throw new Exception("not updated");
             }
         }catch (Exception ex){
-            System.out.println(ex.getMessage());
             throw new ResourceNotFoundException(ex.getMessage());
         }
     }

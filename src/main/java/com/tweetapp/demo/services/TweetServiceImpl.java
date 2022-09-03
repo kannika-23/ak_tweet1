@@ -26,14 +26,11 @@ public class TweetServiceImpl implements TweetService{
     public static final String TOPIC_NAME = "tweetTopic";
     public static final String GROUP_ID = "group_id";
 
-
-
     @Override
     public List<Tweet> getAll() {
         try{
             return tweetRepo.findAll();
         }catch (Exception ex){
-            System.out.println("no Exception");
             System.out.println(ex.getMessage());
         }
         return null;
@@ -57,8 +54,6 @@ public class TweetServiceImpl implements TweetService{
         tweet.setLike(Long.valueOf(0));
         tweet.setTweetByCount(getCount(username));
         tweet.setReply(null);
-       // tweetRepo.save(tweet);
-        System.out.println("in add tweet");
         try {
            tweet =  tweetRepo.save(tweet);
         }catch (Exception ex){
@@ -83,8 +78,7 @@ public class TweetServiceImpl implements TweetService{
     }
 
    // @Override
-   @KafkaListener(topics = TOPIC_NAME,
-           groupId = GROUP_ID)
+   @KafkaListener(topics = TOPIC_NAME, groupId = GROUP_ID)
     public void deleteTweetOfUser(String id) {
         try {
             System.out.println(Long.parseLong(id));
@@ -95,18 +89,7 @@ public class TweetServiceImpl implements TweetService{
         }
        // return false;
     }
-//    @Override
-//    @KafkaListener(topics = TOPIC_NAME,
-//            groupId = GROUP_ID)
-//    public boolean deleteTweetOfUser(String username, Long id) {
-//        try {
-//            tweetRepo.deleteById(id);
-//            return true;
-//        }catch(Exception ex){
-//            System.out.println(ex.getMessage());
-//        }
-//        return false;
-//    }
+
 
     @Override
     public boolean likeTweetOfUser(String username, Long id) {
@@ -127,7 +110,6 @@ public class TweetServiceImpl implements TweetService{
         rly.setBy(rlyCont.getRlyBy());
         rly.setReplyDate(LocalDate.now());
         Tweet tweet = tweetRepo.findBytweetId(id);
-        System.out.println(tweet.toString());
         List<Reply> rlyList = new ArrayList<>();
         if(tweet.getReply() == null){
             rlyList.add(rly);
@@ -139,7 +121,6 @@ public class TweetServiceImpl implements TweetService{
         }
         UpdateResult result = customRepo.updateTweetRly(tweet.getTweetId(),rlyList);
         if(result != null){
-            System.out.println("in reslut"+result.toString());
             return true;
         }
         return false;
@@ -153,7 +134,6 @@ public class TweetServiceImpl implements TweetService{
     private long getrlyId(String username, Long id) {
         List<Tweet> list= tweetRepo.findAllByTweetBy(username);
         Tweet tweet = (Tweet) list.stream().filter(tweet1 -> tweet1.getTweetId().equals(id));
-        System.out.println(tweet.getReply().size());
         return tweet.getReply().size()+1;
     }
 }
